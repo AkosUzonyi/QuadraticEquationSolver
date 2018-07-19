@@ -1,0 +1,7 @@
+C:\Users\Levi\source\repos\QuadraticEquationSolver\QuadraticEquationSolver\bin\Debug\QuadraticEquationSolver.exe.config
+C:\Users\Levi\source\repos\QuadraticEquationSolver\QuadraticEquationSolver\bin\Debug\QuadraticEquationSolver.exe
+C:\Users\Levi\source\repos\QuadraticEquationSolver\QuadraticEquationSolver\bin\Debug\QuadraticEquationSolver.pdb
+C:\Users\Levi\source\repos\QuadraticEquationSolver\QuadraticEquationSolver\obj\Debug\QuadraticEquationSolver.csproj.CoreCompileInputs.cache
+C:\Users\Levi\source\repos\QuadraticEquationSolver\QuadraticEquationSolver\obj\Debug\QuadraticEquationSolver.exe
+C:\Users\Levi\source\repos\QuadraticEquationSolver\QuadraticEquationSolver\obj\Debug\QuadraticEquationSolver.pdb
+C:\Users\Levi\source\repos\QuadraticEquationSolver\QuadraticEquationSolver\obj\Debug\QuadraticEquationSolver.csprojAssemblyReference.cache
