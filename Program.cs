@@ -16,7 +16,9 @@ namespace QuadraticEquationSolver
             bool keepCalculating = true;
             do
             {
-                Input(ref a, ref b, ref c);
+                Input(ref a, "a");
+                Input(ref b, "a");
+                Input(ref a, "c");
                 InSquareRoot(ref a, ref b, ref c);
 
                 Console.WriteLine("\nPress 'Y' for a new equation or any key to exit the program.");
@@ -26,17 +28,17 @@ namespace QuadraticEquationSolver
             } while (keepCalculating);           
         }
 
-        static void Input(ref double a, ref double b, ref double c)
+        static void Input(ref double value, string variableName)
         {
-            bool aError = true;
+            bool error = true;
             do
             {
                 try
                 {
-                    Console.Write("\nPlease enter the value of a: ");
-                    a = double.Parse(Console.ReadLine());
-                    Console.WriteLine(" a = {0}", a);
-                    aError = false;
+                    Console.Write("\nPlease enter the value of {0}: ", variableName);
+                    value = double.Parse(Console.ReadLine());
+                    Console.WriteLine(" {0} = {1}", variableName, value);
+                    error = false;
                 }
                 catch (FormatException)
                 {
@@ -46,47 +48,7 @@ namespace QuadraticEquationSolver
                 {
                     Console.WriteLine("An unknown error has occured. Plese try again.");
                 }
-            } while (aError);
-
-            bool bError = true;
-            do
-            {
-                try
-                {
-                    Console.Write("\nPlease enter the value of b: ");
-                    b = double.Parse(Console.ReadLine());
-                    Console.WriteLine(" b = {0}", b);
-                    bError = false;
-                }
-                catch (FormatException)
-                {
-                    Console.WriteLine("Hey, this is not a number.");
-                }
-                catch (Exception)
-                {
-                    Console.WriteLine("An unknown error has occured. Plese try again.");
-                }
-            } while (bError);
-
-            bool cError = true;
-            do
-            {
-                try
-                {
-                    Console.Write("\nEnter the value of c: ");
-                    c = double.Parse(Console.ReadLine());
-                    Console.WriteLine(" c = {0} ", c);
-                    cError = false;
-                }
-                catch (FormatException)
-                {
-                    Console.WriteLine("Hey, this is not a number.");
-                }
-                catch (Exception)
-                {
-                    Console.WriteLine("An unknown error has occured. Plese try again.");
-                }
-            } while (cError);
+            } while (error);
         }
 
         static void InSquareRoot(ref double a, ref double b, ref double c)
